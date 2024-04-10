@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+#calculator {
+  width: 280px;
+  height: 500px;
+  background-color: #17181A;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 50px #004473;
+  gap: 40px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.calculator-title, .creator{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.calculator-title {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  
+}
+
+.creator {
+  margin-top: 3px;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: #17181A;
+  width: 240px; 
+  /* 60 x 5 */
+  height: 90px;
+  overflow-y: auto;
+  text-align: right;
+  position: relative; 
+}
+
+#display-formula {
+  font-size: 1.35em;
+  color: #616161;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#display {
+  font-size: 2.25em; 
+  color: #FFFFFF;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.calculator-elements {
+  display: grid;
+  grid-template-rows: repeat(5, 54px);
+  grid-template-columns: repeat(4, 54px);
+  grid-template-areas: 
+  'clear clear divide multiply'
+  'seven eight nine minus'
+  'four five six plus'
+  'one two three equals'
+  'zero zero decimal equals';
+  grid-gap: 7px;
+}
+
+.calculator-elements button {
+  font-family: "Poppins", sans-serif;
+  border-radius: 14px;
+  font-size: 1.35em;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+  border: none;
+}
+
+.calculator-elements button:hover {
+  opacity: 0.8;
+  border: 1px solid #B2DAFF;
+}
+
+.calculator-elements button:active {
+  transform: scale(0.95);
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+.gray-turquoise {
+  background-color: #303136;
+  color: #29A8FF;
+}
+
+.lightBlue-white {
+  background-color: #1991FF;
+  color: #B2DAFF;
+}
+
+.blue-lightBlue {
+  background-color: #005DB2;
+  color: #339DFF;
+}
+
+.gray-gray {
+  background-color: #616161;
+  color: #A5A5A5;
+}
