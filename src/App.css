@@ -22,7 +22,7 @@
   width: 100vw;
 }
 
-.calculator-title, .creator{
+.calculator-title, .container-credits{
   font-family: "Raleway", sans-serif;
   text-align: center;
   text-shadow: 2px 2px 2px #000;
@@ -34,8 +34,32 @@
   
 }
 
-.creator {
-  margin-top: 3px;
+.container-credits {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container-credits a{
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.container-credits a:hover {
+  color: #29A8FF;
+  transform: scale(1.05);
+}
+
+.credits {
+  font-size: 1.1em;
+}
+
+.credits-github {
+  font-size: 1.5em;
 }
 
 .display-container {

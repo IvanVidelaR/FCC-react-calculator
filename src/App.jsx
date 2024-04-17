@@ -170,7 +170,16 @@ function App() {
 				</div>
 				<Calculator buttonClick={buttonClick}/>
 			</div>
-			<p class="creator">by IvanVidelaR</p>
+			<div className="container-credits">
+				<p>by</p>
+				<a href="https://www.linkedin.com/in/ivanvidelar/" target="_blank">
+					<p className="credits">IvanVidelaR </p>
+				</a>
+				<p>;</p>
+				<a href="https://github.com/IvanVidelaR/FCC-react-calculator" target="_blank">
+					<i className="fa-brands fa-square-github credits-github"></i>
+				</a>
+			</div>
 		</div>
 		
 	)
